@@ -1,0 +1,30 @@
+let button1Element = document.getElementById("button1");
+let button2Element = document.getElementById("button2");
+let button3Element = document.getElementById("button3");
+let button4Element = document.getElementById("button4");
+let spanElement = document.getElementById("selectedColorHexCode");
+let containerElement = document.getElementById("colorPickerContainer");
+
+function button1() {
+    containerElement.style.backgroundColor = "#e0e0e0";
+    spanElement.style.color = "#e0e0e0";
+    spanElement.textContent = "#e0e0e0";
+}
+
+function button2() {
+    containerElement.style.backgroundColor = "#6fcf97";
+    spanElement.style.color = "#6fcf97";
+    spanElement.textContent = "#6fcf97";
+}
+
+function button3() {
+    containerElement.style.backgroundColor = "#56ccf2";
+    spanElement.style.color = "#56ccf2";
+    spanElement.textContent = "#56ccf2";
+}
+
+function button4() {
+    containerElement.style.backgroundColor = "#bb6bd9";
+    spanElement.style.color = "#bb6bd9";
+    spanElement.textContent = "#bb6bd9";
+}

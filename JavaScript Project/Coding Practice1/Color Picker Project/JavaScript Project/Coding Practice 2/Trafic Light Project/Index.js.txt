@@ -1,0 +1,35 @@
+let stopButtonElement = document.getElementById("stopButton");
+let readyButtonElement = document.getElementById("readyButton");
+let goButtonElement = document.getElementById("goButton");
+
+let redLightElement = document.getElementById("stopLight");
+let yellowLightElement = document.getElementById("readyLight");
+let greenLightElement = document.getElementById("goLight");
+
+function redLight() {
+    stopButtonElement.style.backgroundColor = "#cf1124";
+    redLightElement.style.backgroundColor = "#cf1124";
+    readyButtonElement.style.backgroundColor = "#1f1d41";
+    goButtonElement.style.backgroundColor = "#1f1d41";
+    yellowLightElement.style.backgroundColor = "#4b5069";
+    greenLightElement.style.backgroundColor = "#4b5069";
+}
+
+function yellowLight() {
+    readyButtonElement.style.backgroundColor = "#f7c948";
+    yellowLightElement.style.backgroundColor = "#f7c948";
+    stopButtonElement.style.backgroundColor = "#1f1d41";
+    goButtonElement.style.backgroundColor = "#1f1d41";
+    redLightElement.style.backgroundColor = "#4b5069";
+    greenLightElement.style.backgroundColor = "#4b5069";
+
+}
+
+function greenLight() {
+    goButtonElement.style.backgroundColor = "#199473";
+    greenLightElement.style.backgroundColor = "#199473";
+    stopButtonElement.style.backgroundColor = "#1f1d41";
+    redLightElement.style.backgroundColor = "#4b5069";
+    yellowLightElement.style.backgroundColor = "#4b5069";
+    readyButtonElement.style.backgroundColor = "#1f1d41";
+}
